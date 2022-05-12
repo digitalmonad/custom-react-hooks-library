@@ -1,0 +1,23 @@
+name: CI - Test
+on:
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  test:
+    name: Setup
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: "16.10"
+          check-latest: true
+
+      - name: Install Node Dependencies
+        run: npm install
+
+      - name: Run tests with Jest
+        run: npm run test
