@@ -12,6 +12,6 @@
     "noEmit": true,
     "moduleResolution": "node"
   },
-  "include": ["src"],
+  "include": ["src", "lol.ts"],
   "$schema": "https://json.schemastore.org/tsconfig"
 }
