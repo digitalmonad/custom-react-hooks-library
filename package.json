@@ -12,6 +12,7 @@
     "lint:js": "eslint src/**",
     "lint": "npm run lint:format && npm run lint:js",
     "test": "jest",
+    "test:watch": "jest --watch",
     "prepare": "husky install"
   },
   "keywords": [
