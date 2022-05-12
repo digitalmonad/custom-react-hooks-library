@@ -1,4 +1,4 @@
-name: CI - Test
+name: CI - Pull Request
 on:
   pull_request:
     branches:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    name: Test
+    name: Lint, Test and Build
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -19,5 +19,11 @@ jobs:
       - name: Install Node Dependencies
         run: npm install
 
-      - name: Run tests with Jest
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
         run: npm run test
+
+      - name: Build
+        run: npm run build
