@@ -1,1 +1,1 @@
-[![CI - Test](https://github.com/digitalmonad/custom-react-hooks-library/actions/workflows/test.yml/badge.svg)](https://github.com/digitalmonad/custom-react-hooks-library/actions/workflows/test.yml)
+[![CI - Lint, Test, Build](https://github.com/digitalmonad/custom-react-hooks-library/actions/workflows/pull-request.yml/badge.svg)](https://github.com/digitalmonad/custom-react-hooks-library/actions/workflows/pull-request.yml)
