@@ -48,4 +48,4 @@ jobs:
           ALLOW_TAG_PREFIX: "true"
         with:
           args: |
-            custom-react-hooks-library-*.tgz
+            @digitalmonad/custom-react-hooks-library-*.tgz
