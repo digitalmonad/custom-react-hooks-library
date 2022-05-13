@@ -1,1 +1,3 @@
-[![CI - Lint, Test, Build](https://github.com/digitalmonad/custom-react-hooks-library/actions/workflows/pull-request.yml/badge.svg)](https://github.com/digitalmonad/custom-react-hooks-library/actions/workflows/pull-request.yml)
+[![CI - Lint, Test, Build](https://github.com/digitalmonad/custom-react-hooks-library/actions/workflows/lint-test-build.yml/badge.svg)](https://github.com/digitalmonad/custom-react-hooks-library/actions/workflows/lint-test-build.yml)
+
+[![Publish to NPM](https://github.com/digitalmonad/custom-react-hooks-library/actions/workflows/publish.yml/badge.svg)](https://github.com/digitalmonad/custom-react-hooks-library/actions/workflows/publish.yml)
