@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -37,15 +37,3 @@ jobs:
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: Package lib
-        run: npm pack
-
-      - name: Release
-        uses: docker://antonyurchenko/git-release:v3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ALLOW_EMPTY_CHANGELOG: "false"
-          ALLOW_TAG_PREFIX: "true"
-        with:
-          args: |
-            @digitalmonad/custom-react-hooks-library-*.tgz
